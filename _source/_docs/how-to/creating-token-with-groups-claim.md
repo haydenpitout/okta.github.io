@@ -9,7 +9,14 @@ excerpt: How to create an ID token or access token which contains a groups claim
 Because Okta allows you to specify a profile with whatever JSON-compliant contents you wish, you can create a list of groups that are included in the token
 in the groups claim. You can add a group claim for any app (Okta, Active Directory, or Workday, for example) into ID tokens or access tokens for API Access Management.
 
-To do this, create an OpenID Connect client, assign a group whitelist to it, and configure a groups claim: 
+### Before You Start
+
+1. Create an OpenID Connect client with the [Apps API](/docs/api/resources/apps.html#request-example-8).
+2. Create the groups that you wish to configure in the groups claim you will create. These instructions use a single group, Everyone.
+
+### Create a Token with a Groups Claim
+
+You'll assign a group whitelist to your OpenID Connect client, and configure a groups claim: 
 
 1. Create an OpenID client at `/{yourOktaDomain}.com/api/v1/apps`
    
