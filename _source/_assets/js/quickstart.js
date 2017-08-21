@@ -276,4 +276,33 @@
     main();
   }
 
+  // Handle building the icons and code languages
+  var code = [
+    { name: 'angular', label: 'Angular' },
+    { name: 'react',label: 'React' },
+    { name: 'ios',  label: 'iOS' },
+    { name: 'nodejs', label: 'Node.js' },
+    { name: 'java', label: 'Java' },
+    { name: 'dotnet', label: '.NET' },
+    { name: 'php', label: 'PHP' }
+  ]
+
+  function renderCodeLinks() {
+    code.forEach(function (language) {
+      var link = $('<a>', {
+        text: `${language.label} ↗`,
+        class: `icon code-${language.name}-32`,
+        href: `/code/${language.name}/`,
+      });
+      $('#docs-languages').append(link);
+    });
+  }
+
+  if (window.location.pathname.match('^/quickstart')) {
+    main();
+  }
+
+  if (window.location.pathname.match('^/documentation/')) {
+    renderCodeLinks();
+  }
 })(jQuery);
