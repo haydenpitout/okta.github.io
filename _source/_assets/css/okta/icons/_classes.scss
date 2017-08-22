@@ -1696,6 +1696,70 @@
   color: $icon-color-dark;
 }
 
+.code-python-32::after {
+  content: $code-python;
+  color: #007dc1;
+}
+
+.code-php-32::after {
+  content: $code-php;
+  color: #115d8b;
+}
+
+.code-javascript-32::after {
+  content: $code-javascript;
+  color: #f1d10d;
+}
+
+.code-java-32::after {
+  content: $code-java;
+  color: #ff8b00;
+}
+
+.code-ios-32::after {
+  content: $code-ios;
+  color: #abadac;
+}
+
+.code-android-32::after {
+  content: $code-android;
+  color: #4cdb82;
+}
+
+.code-dotnet-32::after {
+  content: $code-dotnet;
+  color: #835ab1;
+}
+
+.code-angular-32::after {
+  content: $code-angular;
+  color: #d93934;
+}
+
+.code-node-32::after {
+  content: $code-node;
+  color: #4cdb82;
+}
+
+.code-react-32::after {
+  content: $code-react;
+  color: #46b3e9;
+}
+
+.code-python-32::before,
+.code-php-32::before,
+.code-javascript-32::before,
+.code-java-32::before,
+.code-ios-32::before,
+.code-android-32::before,
+.code-dotnet-32::before,
+.code-angular-32::before,
+.code-node-32::before,
+.code-react-32::before {
+  content: $code-background;
+  color: #fff;
+}
+
 
 //----------------------------------------------------------//
 //                       48x48 icons                        //
