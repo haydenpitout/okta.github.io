@@ -280,8 +280,8 @@
   var code = [
     { name: 'angular', label: 'Angular' },
     { name: 'react',label: 'React' },
-    { name: 'ios',  label: 'iOS' },
-    { name: 'node', label: 'Node.js' },
+    { name: 'swift',  label: 'iOS' },
+    { name: 'nodejs', label: 'Node.js' },
     { name: 'java', label: 'Java' },
     { name: 'dotnet', label: '.NET' },
     { name: 'php', label: 'PHP' }
